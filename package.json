@@ -1,0 +1,30 @@
+{
+  "name": "jade-web-forms",
+  "version": "0.0.0",
+  "description": "First experimentation with Jade",
+  "main": "app/index.js",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "express": "^4.7.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jade": "^1.5.0",
+    "jshint-stylish": "^0.4.0",
+    "morgan": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GLoganDR/jade-web-forms"
+  },
+  "author": "Logan Richardson <g.logan.richardson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GLoganDR/jade-web-forms/issues"
+  },
+  "homepage": "https://github.com/GLoganDR/jade-web-forms"
+}
