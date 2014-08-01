@@ -21,6 +21,23 @@ app.get('/calc', function(req, res){
   res.render('calc');
 });
 
+app.get('/boxes', function(req, res){
+  res.render('boxes');
+});
+
+app.post('/boxes', function(req, res){
+  var count = req.body.count * 1;
+  var colors = req.body.colors.split(',');
+  var heights = req.body.height.split('-');
+  var widths = req.body.width.split('-');
+
+  colors = colors.map(function(c){return c.trim();});
+  widths = widths.map(function(n){return n * 1;});
+  heights = heights.map(function(n){return n * 1;});
+
+  res.render('pbox', {colors:colors, widths:widths, heights:heights, count:count});
+});
+
 app.post('/calc', function(req, res){
   var ans = 0;
   if(req.body.symbol === '+'){

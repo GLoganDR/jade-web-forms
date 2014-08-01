@@ -9,6 +9,7 @@ html
     h1 Calculator
     h3 Answer: #{ans}
     form(method='post', action='/calc')
+      textarea(name='test') 
       label Enter First Number: 
       input(type='text', name='x', placeholder='x', autofocus=true) 
       label Enter Mathematical Symbol: 
